@@ -10,12 +10,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpringJenkinsApplicationTests {
 	
-//	public static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplication.class);
+	public static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplication.class);
 
 	@Test
 	void contextLoads() {
 		logger.info("test case executing..." );
 		logger.info("test case executing second log statement running..." );
+		logger.info("testing build pipeline in jenkins");
 		assertEquals(true, true);
 	}
 
